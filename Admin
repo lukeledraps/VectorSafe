@@ -1,0 +1,53 @@
+public class Admin {
+	
+
+	public void createNewAccount()
+	{
+		User newuser = new User(); 
+		setTempPasswd(newuser);
+		
+	}
+	
+	public void deleteAccount(username)
+	{
+		//if (username is in database)
+		remove username //remove username from the User Table
+		//else error
+	}
+	
+	public void freezeAccount(username)
+	{
+		//if (username is in database)
+			username.is_frozen(true);
+		//else error
+
+	}
+	
+	public void unFreezeAccount(username)
+	{
+		//if (username is in database)
+		username.is_frozen(false);
+		//else error
+	}
+	
+	public void setTempPasswd(username)
+	{
+		//if (username is in database)
+		//with generatepassrd(), enter random passwrd and email user
+		//else error
+	}
+	
+	public void viewQ()
+	{
+		//display current queue of users for admin approval
+	}
+	
+	public void approveUser(username)
+	{
+		//if (username is in database)
+		username.is_approved(true) //is_approved is not a variable in the user class, should be created?
+		//else error
+	}
+
+
+}
